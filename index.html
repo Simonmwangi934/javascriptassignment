@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div>
+        <form method="post" onsubmit="return validateforms()">
+            <h2 class=" title ">Register Here<b></b></h2>
+            <div class="validation">
+
+                <div class="input-group">
+                    <label for="firstname ">Names</label>
+                    <input type="text" id="register-name" onkeyup="validatenames()">
+                    <span id="name-error">
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label for="email ">Email</label>
+                    <input type="email" id="register-email" onkeyup="validateemail()">
+                    <span id="email-error">
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label for="age ">Age</label>
+                    <input type="number" id="register-age " onkeyup="validateage() ">
+                    <span id="age-error">
+                    </span>
+                </div>
+                <div class="input-groups">
+                    <label for="gender ">Gender</label>
+                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id=" register-gender" onkeyup="validategender() ">Male<br>
+                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id="register-gender" onkeyup="validategender() ">Female<br>
+                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id="register-gender" onkeyup="validategender() ">Others
+                    <br><br>
+                    <span id="gender-error">
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label for="country ">Select Your Country</label>
+                    <select name="country" id="register-country " onkeyup="validatecountry()">
+                        <option value="kenya ">Kenya</option>
+                        <option value="uganda ">Uganda</option>
+                        <option value="rwanda " selected>Rwanda</option>
+                        <option value="ethiopia ">Ethiopia</option>
+                    </select>
+                    <span id="country-error">
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label for="password ">Password</label>
+                    <input type="password" id="register-password" onkeyup="validatepassword()">
+                    <span id="password-error">
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label for="confirm ">Confirm Password</label>
+                    <input type="password" id="register-confirmpassword" onkeyup="validateapasswords()">
+                    <span id="confirm-error">
+                    </span>
+                </div>
+                <div class="rgbtn">
+
+                    <button id="submit-error " type="submit " onclick="return validateform() ">Register</button>
+                    <button id="submit " type="reset ">Reset</button>
+                    <span id="register-error"></span>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+    <script src="script.js ">
+    </script>
+</body>
+
+</html>
+
+</html>
