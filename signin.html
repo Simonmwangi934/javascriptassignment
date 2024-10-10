@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div>
+        <form method="post" name="form" action="" onsubmit="return validateforms()">
+            <h2 class="title">Login Here<b></b></h2>
+            <div class="validation">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="register-email" name="email">
+                    <i class="fa" id="emailIcon"></i>
+                    <div id="emailError" class="Error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="register-password" name="password">
+                    <i class="fa" id="passwordIcon"></i>
+                    <div id="passwordError" class="Error"></div>
+                </div>
+
+                <div class="rgbtn">
+                    <button type="Sign In">Sign In</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
