@@ -11,75 +11,71 @@
 
 <body>
     <div>
-        <form method="post" onsubmit="return validateforms()">
-            <h2 class=" title ">Register Here<b></b></h2>
+        <form method="post" name="form" action="" onsubmit="return validateform()">
+            <h2 class="title">Register Here<b></b></h2>
             <div class="validation">
+                <div class="input-group">
+                    <label for="firstname">Names</label>
+                    <input type="text" id="register-name" name="name">
+                    <i class="fa" id="nameIcon"></i>
+                    <div id="nameError" class="Error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="register-email" name="email">
+                    <i class="fa" id="emailIcon"></i>
+                    <div id="emailError" class="Error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="register-age" name="age">
+                    <i class="fa" id="ageIcon"></i>
 
-                <div class="input-group">
-                    <label for="firstname ">Names</label>
-                    <input type="text" id="register-name" onkeyup="validatenames()">
-                    <span id="name-error">
-                    </span>
-                </div>
-                <div class="input-group">
-                    <label for="email ">Email</label>
-                    <input type="email" id="register-email" onkeyup="validateemail()">
-                    <span id="email-error">
-                    </span>
-                </div>
-                <div class="input-group">
-                    <label for="age ">Age</label>
-                    <input type="number" id="register-age " onkeyup="validateage() ">
-                    <span id="age-error">
-                    </span>
+                    <div id="ageError" class="Error"></div>
                 </div>
                 <div class="input-groups">
-                    <label for="gender ">Gender</label>
-                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id=" register-gender" onkeyup="validategender() ">Male<br>
-                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id="register-gender" onkeyup="validategender() ">Female<br>
-                    <input type="radio" autocomplete="on " autofocus="on " name="gender " id="register-gender" onkeyup="validategender() ">Others
-                    <br><br>
-                    <span id="gender-error">
-                    </span>
+                    <label for="gender">Gender</label>
+                    <div>
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                        <label><input type="radio" name="gender" value="other">Others</label>
+                    </div>
+                    <i class="fa" id="genderIcon"></i>
+
+                    <div id="genderError" class="Error"></div>
                 </div>
                 <div class="input-group">
-                    <label for="country ">Select Your Country</label>
-                    <select name="country" id="register-country " onkeyup="validatecountry()">
-                        <option value="kenya ">Kenya</option>
-                        <option value="uganda ">Uganda</option>
-                        <option value="rwanda " selected>Rwanda</option>
-                        <option value="ethiopia ">Ethiopia</option>
+                    <label for="country">Select Your Country</label>
+                    <select name="country" id="register-country">
+                        <option value="Select">Select</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="rwanda">Rwanda</option>
+                        <option value="ethiopia">Ethiopia</option>
                     </select>
-                    <span id="country-error">
-                    </span>
+                    <i class="fa" id="countryIcon"></i>
+                    <div id="countryError" class="Error"></div>
                 </div>
                 <div class="input-group">
-                    <label for="password ">Password</label>
-                    <input type="password" id="register-password" onkeyup="validatepassword()">
-                    <span id="password-error">
-                    </span>
+                    <label for="password">Password</label>
+                    <input type="password" id="register-password" name="password">
+                    <i class="fa" id="passwordIcon"></i>
+                    <div id="passwordError" class="Error"></div>
                 </div>
                 <div class="input-group">
-                    <label for="confirm ">Confirm Password</label>
-                    <input type="password" id="register-confirmpassword" onkeyup="validateapasswords()">
-                    <span id="confirm-error">
-                    </span>
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="register-confirmpassword" name="confirm">
+                    <i class="fa" id="confirmIcon"></i>
+                    <div id="confirmError" class="Error"></div>
                 </div>
                 <div class="rgbtn">
-
-                    <button id="submit-error " type="submit " onclick="return validateform() ">Register</button>
-                    <button id="submit " type="reset ">Reset</button>
-                    <span id="register-error"></span>
+                    <button id="submit-error" type="submit">Register</button>
+                    <button id="submit" type="reset">Reset</button>
                 </div>
-
-
             </div>
         </form>
     </div>
-    <script src="script.js ">
-    </script>
+    <script src="script.js"></script>
 </body>
-
-</html>
 
 </html>
